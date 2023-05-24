@@ -21,7 +21,7 @@
         <div class="mb-3">
             <label for="description">Descrizione post</label>
             <textarea name="description" id="description" cols="30" rows="10" class="form-control @error('description') is-invalid @enderror">
-            value="{{old('description')}}"
+            {{old('description')}}
             </textarea>
             @error('description')
               <div class="invalid-feedback">
