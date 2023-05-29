@@ -4,6 +4,7 @@
 <div class="container">
     <div class="py-3">
         <h1>Visualizzazione post</h1>
+        <div>Categoria: {{ $post->category?->name }}</div>
 
         <hr>
 
@@ -16,6 +17,8 @@
         <br>
 
         <p>{{$post->description}}</p>
+
+        <h4>{{$post->language}}</h4>
     </div>
 
     <div class="d-flex justify-content-around">
